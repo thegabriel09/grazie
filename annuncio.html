@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annuncio Importante</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #111827, #1f2937);
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+        }
+
+        img {
+            width: 220px;
+            max-width: 80%;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,.4);
+        }
+
+        h1 {
+            font-size: 2.6rem;
+            margin-bottom: 20px;
+            color: #ff4d6d;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: left;
+            box-shadow: 0 10px 30px rgba(0,0,0,.4);
+        }
+
+        p {
+            font-size: 1.15rem;
+            color: #d1d5db;
+            margin-bottom: 18px;
+            line-height: 1.6;
+        }
+
+        .date {
+            color: #ff4d6d;
+            font-weight: bold;
+        }
+
+        ul {
+            margin: 0 0 18px 25px;
+            color: #d1d5db;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .signature {
+            margin-top: 25px;
+            font-style: italic;
+            color: #9ca3af;
+        }
+
+        .heart {
+            color: #ff4d6d;
+            animation: pulse 1.5s infinite;
+            display: inline-block;
+        }
+
+        @keyframes pulse {
+            0%,100% { transform: scale(1); }
+            50% { transform: scale(1.15); }
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 30px;
+            background: #ff4d6d;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: transform .2s, box-shadow .2s;
+            box-shadow: 0 6px 18px rgba(255,77,109,.4);
+        }
+
+        .back-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 24px rgba(255,77,109,.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://old.solarismc.online/abyss-logo.png" alt="img">
+
+        <h1>ANNUNCIO IMPORTANTE</h1>
+
+        <div class="card">
+            <p>Ciao a tutti,</p>
+            <p>con tristezza vi devo dire che <span class="date">AbyssMC chiuderà il 10 Luglio 2026</span>.</p>
+            <p>Da un po' di tempo ci sono pochi giocatori e i costi per mantenere il server si fanno pesanti, per questo abbiamo deciso di chiudere.</p>
+            <p><strong>Però se nelle prossime settimane tornate a giocare in tanti</strong>, possiamo ancora decidere di non chiudere. Dipende tutto da voi!</p>
+
+            <p><strong>Dal 10 Luglio 2026</strong> succederà questo:</p>
+            <ul>
+                <li>Il server Minecraft si spegnerà</li>
+                <li>Il sito e lo store non funzioneranno più</li>
+                <li>Tutti gli altri servizi verranno chiusi</li>
+            </ul>
+
+            <p>È stata un'esperienza bellissima. Grazie di cuore a tutti voi che avete giocato con noi. <strong>Vi vogliamo bene.</strong></p>
+
+            <p>Il server è anche <strong>in vendita</strong>. Se qualcuno è interessato, scrivetemi in privato o aprite ticket.</p>
+
+            <p>Se volete parlare, salutare o chiedere qualsiasi cosa, aprite un <strong>ticket</strong> nel Discord.</p>
+
+            <p>Grazie di tutto <span class="heart">❤️</span></p>
+
+            <p>Questo non è un addio, probabilmente AbyssMC riaprirà in futuro, appena avremmo il tempo e i fondi necessari.</p>
+
+            <p class="signature">— un saluto da Marco, Gabriel e tutto lo staff di AbyssMC ❤️</p>
+        </div>
+
+        <a href="index.html" class="back-btn">← Torna alla Home</a>
+    </div>
+</body>
+</html>

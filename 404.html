@@ -54,6 +54,25 @@
             0%,100% { transform: scale(1); }
             50% { transform: scale(1.15); }
         }
+
+        .announce-btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 30px;
+            background: #ff4d6d;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: transform .2s, box-shadow .2s;
+            box-shadow: 0 6px 18px rgba(255,77,109,.4);
+        }
+
+        .announce-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 24px rgba(255,77,109,.5);
+        }
     </style>
 </head>
 <body>
@@ -61,6 +80,8 @@
         <img src="https://old.solarismc.online/abyss-logo.png" alt="img">
 
         <h1>Grazie di tutto <span class="heart">❤️</span></h1>
+
+        <a href="annuncio.html" class="announce-btn">Leggi l'annuncio →</a>
     </div>
 </body>
 </html>
